@@ -1,4 +1,4 @@
-# algorithm_teamproject
+**# algorithm_teamproject
 Algorithm Team Project - Bike Rental Finder
 
 이 프로젝트는 Python을 사용하여 사용자의 위치를 기준으로 가장 가까운 자전거 대여소를 찾아주는 애플리케이션입니다.
@@ -76,3 +76,4 @@ Pull Request를 생성합니다.
 
 라이선스
 이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요.
+**
