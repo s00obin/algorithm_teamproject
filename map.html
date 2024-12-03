@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b4818bb8afc74597c03be3f532cacef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3b4818bb8afc74597c03be3f532cacef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3b4818bb8afc74597c03be3f532cacef = L.map(
+                "map_3b4818bb8afc74597c03be3f532cacef",
+                {
+                    center: [37.4483, 127.127],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d596a65d0fb7c4547c04b3503a7f246 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7d596a65d0fb7c4547c04b3503a7f246.addTo(map_3b4818bb8afc74597c03be3f532cacef);
+        
+    
+            var marker_5a366acedc5a2fdc5c7eb856cc9e09e9 = L.marker(
+                [37.4483, 127.127],
+                {}
+            ).addTo(map_3b4818bb8afc74597c03be3f532cacef);
+        
+    
+            var icon_890ed1635f29d5d505a760032c054280 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a366acedc5a2fdc5c7eb856cc9e09e9.setIcon(icon_890ed1635f29d5d505a760032c054280);
+        
+    
+        var popup_a218e9a65ac57d7ac9a80ef06e9bc34a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fcf5a5ad86655ef5332ffe8516b2717 = $(`<div id="html_5fcf5a5ad86655ef5332ffe8516b2717" style="width: 100.0%; height: 100.0%;">사용자 위치</div>`)[0];
+                popup_a218e9a65ac57d7ac9a80ef06e9bc34a.setContent(html_5fcf5a5ad86655ef5332ffe8516b2717);
+            
+        
+
+        marker_5a366acedc5a2fdc5c7eb856cc9e09e9.bindPopup(popup_a218e9a65ac57d7ac9a80ef06e9bc34a)
+        ;
+
+        
+    
+    
+            var marker_06bcc69d578f27f6b8ee26b3190c872f = L.marker(
+                [37.4303728, 127.1243105],
+                {}
+            ).addTo(map_3b4818bb8afc74597c03be3f532cacef);
+        
+    
+            var icon_7759dc9319403fed12bbcec83785d032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_06bcc69d578f27f6b8ee26b3190c872f.setIcon(icon_7759dc9319403fed12bbcec83785d032);
+        
+    
+        var popup_57a811eeb6bf6c7c20c13d6c25618c4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5da83fae4482d89cedf4918ef4a93a83 = $(`<div id="html_5da83fae4482d89cedf4918ef4a93a83" style="width: 100.0%; height: 100.0%;">가장 가까운 대여소</div>`)[0];
+                popup_57a811eeb6bf6c7c20c13d6c25618c4d.setContent(html_5da83fae4482d89cedf4918ef4a93a83);
+            
+        
+
+        marker_06bcc69d578f27f6b8ee26b3190c872f.bindPopup(popup_57a811eeb6bf6c7c20c13d6c25618c4d)
+        ;
+
+        
+    
+    
+            var poly_line_8ed416b469bd71f4ecd8108e8638c8ba = L.polyline(
+                [[37.4479235, 127.1269981], [37.4479133, 127.1268501], [37.447899, 127.1266403], [37.4478101, 127.126642], [37.4477243, 127.1266463], [37.4466766, 127.1266995], [37.4465245, 127.1267118], [37.4464419, 127.1265836], [37.4460174, 127.1263936], [37.4458521, 127.126359], [37.4456681, 127.1263124], [37.4452808, 127.1262111], [37.4448687, 127.1261304], [37.4439207, 127.1258113], [37.443853, 127.1257789], [37.4432388, 127.1256505], [37.4431307, 127.1256964], [37.4424823, 127.1258037], [37.4415845, 127.1259067], [37.4411804, 127.1259263], [37.4401885, 127.1258258], [37.4400552, 127.1258386], [37.4398939, 127.1258542], [37.4395968, 127.1258835], [37.439599, 127.1260185], [37.4395289, 127.126033], [37.4394803, 127.1260431], [37.4393969, 127.1260603], [37.439337, 127.1259023], [37.4386905, 127.1259719], [37.438221, 127.1260509], [37.4379094, 127.1260655], [37.4378237, 127.1261388], [37.4375315, 127.1263353], [37.4369276, 127.1267683], [37.4365197, 127.1270813], [37.4357791, 127.1267433], [37.4351205, 127.1268137], [37.4333293, 127.1268086], [37.4333764, 127.1270475], [37.4333066, 127.1270648], [37.4330901, 127.1271185], [37.4330277, 127.1267961], [37.4329384, 127.1268093], [37.4327549, 127.1255508], [37.4326433, 127.1246445], [37.4324098, 127.1246505], [37.4323484, 127.1246817], [37.4313519, 127.1246433], [37.4308068, 127.1245108], [37.4308103, 127.1244103], [37.4305081, 127.1244129], [37.4303728, 127.1243105]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_3b4818bb8afc74597c03be3f532cacef);
+        
+    
+        var popup_8adaf1bff8882f7f8db41ce7f4ee86b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c824f4b303c6d0960400c5672fd2f1a8 = $(`<div id="html_c824f4b303c6d0960400c5672fd2f1a8" style="width: 100.0%; height: 100.0%;">최단 경로</div>`)[0];
+                popup_8adaf1bff8882f7f8db41ce7f4ee86b4.setContent(html_c824f4b303c6d0960400c5672fd2f1a8);
+            
+        
+
+        poly_line_8ed416b469bd71f4ecd8108e8638c8ba.bindPopup(popup_8adaf1bff8882f7f8db41ce7f4ee86b4)
+        ;
+
+        
+    
+</script>
+</html>
